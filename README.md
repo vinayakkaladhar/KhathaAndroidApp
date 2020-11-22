@@ -19,6 +19,10 @@ Appium client
 Android Studio - for emulator
 adb installed
 
+### APK used
+
+khata-book-udhar-bahi-khata-credit-ledger-account.apk
+
 ## Running the tests
 
 1. Import the pom.XML
