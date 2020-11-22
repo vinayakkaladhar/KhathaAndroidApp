@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Customer: vin added]]>
+    </line>
+    <line>
+      <![CDATA[First transaction - amount lent: ₹ 100]]>
+    </line>
+    <line>
+      <![CDATA[Record Shows ₹ 100 lent]]>
+    </line>
+    <line>
+      <![CDATA[Second transaction - amount received: ₹ 70]]>
+    </line>
+    <line>
+      <![CDATA[Table record 1 Shows ₹ 70 received]]>
+    </line>
+    <line>
+      <![CDATA[Table record 2 Shows ₹ 100 lent]]>
+    </line>
+    <line>
+      <![CDATA[SMS/Whatsapp cannot be done since mobile number was not entered during customer creation]]>
+    </line>
+    <line>
+      <![CDATA[Report and PDF displays ₹ 30 yet to be collected from customer]]>
+    </line>
+  </reporter-output>
+  <suite name="Parallel Testing Suite" duration-ms="88565" started-at="2020-11-22T12:53:18 IST" finished-at="2020-11-22T12:54:47 IST">
+    <groups>
+    </groups>
+    <test name="Parallel Tests" duration-ms="88565" started-at="2020-11-22T12:53:18 IST" finished-at="2020-11-22T12:54:47 IST">
+      <class name="KhathaBook">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:KhathaBook@730d2164]" name="setUp" is-config="true" duration-ms="12036" started-at="2020-11-22T12:53:18 IST" finished-at="2020-11-22T12:53:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startApp()[pri:0, instance:KhathaBook@730d2164]" name="startApp" is-config="true" duration-ms="7764" started-at="2020-11-22T12:53:31 IST" finished-at="2020-11-22T12:53:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method status="PASS" signature="verifyDebitCredit()[pri:1, instance:KhathaBook@730d2164]" name="verifyDebitCredit" duration-ms="63637" started-at="2020-11-22T12:53:38 IST" finished-at="2020-11-22T12:54:42 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Customer: vin added]]>
+            </line>
+            <line>
+              <![CDATA[First transaction - amount lent: ₹ 100]]>
+            </line>
+            <line>
+              <![CDATA[Record Shows ₹ 100 lent]]>
+            </line>
+            <line>
+              <![CDATA[Second transaction - amount received: ₹ 70]]>
+            </line>
+            <line>
+              <![CDATA[Table record 1 Shows ₹ 70 received]]>
+            </line>
+            <line>
+              <![CDATA[Table record 2 Shows ₹ 100 lent]]>
+            </line>
+            <line>
+              <![CDATA[SMS/Whatsapp cannot be done since mobile number was not entered during customer creation]]>
+            </line>
+            <line>
+              <![CDATA[Report and PDF displays ₹ 30 yet to be collected from customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDebitCredit -->
+        <test-method status="PASS" signature="stopApp()[pri:0, instance:KhathaBook@730d2164]" name="stopApp" is-config="true" duration-ms="5100" started-at="2020-11-22T12:54:42 IST" finished-at="2020-11-22T12:54:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopApp -->
+      </class> <!-- KhathaBook -->
+    </test> <!-- Parallel Tests -->
+  </suite> <!-- Parallel Testing Suite -->
+</testng-results>
