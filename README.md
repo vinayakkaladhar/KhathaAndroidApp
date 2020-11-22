@@ -39,6 +39,8 @@ Methods: verifyDebitCreditDetails(), verifyCustomerCreatedWithPhoneNumber(), ver
 
 5.Can be easily invoked via command line.
 
+6.Reports can be found at: {folder}/appium/target/surefire-reports/emailable-report.html and failed screenshots at: appium/{screenshots}
+
 ## Authors
 
 Vinayak kaladhar
