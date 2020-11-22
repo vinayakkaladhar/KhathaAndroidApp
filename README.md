@@ -15,6 +15,9 @@ Build tool: Maven
 
 Java 1.8+ version installed
 Maven installed
+Appium client
+Android Studio - for emulator
+adb installed
 
 ## Running the tests
 
@@ -22,6 +25,7 @@ Maven installed
 2. Use commands: mvn clean followed by mvn install to install the dependencies
 3. Invoke the testNG.xml from IDE or
   via terminal: mvn test
+4. Start the appium server (either through npm package or desktop client)
 
 xml includes:
 class: KhathaBook
