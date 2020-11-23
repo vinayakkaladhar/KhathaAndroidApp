@@ -33,6 +33,9 @@ import static java.time.Duration.ofSeconds;
 import static org.testng.Assert.assertEquals;
 
 @Listeners(Utilities.ListenerTest.class)
+/**
+ * The Main test file thats mapped in testng.xml
+ */
 public class KhathaBook extends LoginPage {
 
     public AppiumDriver driver;
@@ -53,7 +56,7 @@ public class KhathaBook extends LoginPage {
         ((AndroidDriver) driver).startActivity(activity);
 }
 
-    @Test(priority = 0)
+    @Test(priority = 0, description = "create a customer - add transactions - verify the balance")
     public void verifyDebitCreditDetails() throws InterruptedException {
         loginPage.enterCustomerDetails("vin","");
         Assert.assertEquals(driver.findElementById("com.vaibhavkalpe.android.khatabook:id/newEntryHint").getText(),"Add first transaction of vin");
@@ -76,7 +79,7 @@ public class KhathaBook extends LoginPage {
         Reporter.log("Report and PDF displays ₹ 30 yet to be collected from customer");
     }
 
-    //@Test(priority = 0)
+    //@Test(priority = 0, description = "create a customer with phone number and verify reminders can be sent")
     public void verifyCustomerCreatedWithPhoneNumber() throws InterruptedException {
         loginPage.enterCustomerDetails("vin","9600199816");
         Reporter.log("customer vin has been created successfully with mobile number");
@@ -87,7 +90,7 @@ public class KhathaBook extends LoginPage {
         Reporter.log("SMS/Whatsapp can be done since mobile number was entered during customer creation");
     }
 
-    //@Test(priority = 1)
+    //@Test(priority = 1, description = "create an existing customer")
     public void verifyCreationOfExistingCustomer() throws InterruptedException {
         loginPage.enterCustomerDetails("vin","9600199816");
         Reporter.log("Successfully routed to existing customer account");

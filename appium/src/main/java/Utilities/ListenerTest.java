@@ -17,7 +17,9 @@ import java.net.MalformedURLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/**
+ * Every result of the test is captured here and based on the status actions take place
+ */
 public class ListenerTest implements ITestListener
 {
     public static AppiumDriver driver;

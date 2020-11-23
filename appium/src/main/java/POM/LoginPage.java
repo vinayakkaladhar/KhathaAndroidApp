@@ -61,9 +61,9 @@ public class LoginPage extends DriverUtilities {
 
 
     public void enterCustomerDetails(String customerName,String phoneNumber) throws InterruptedException {
-        Thread.sleep(2000);
+        waitForElement(addCustomer);
         addCustomer.click();
-        Thread.sleep(2000);
+        waitForElement(denyOption);
         denyOption.click();
         customerInput.click();
         customerInput.clear();
@@ -76,26 +76,26 @@ public class LoginPage extends DriverUtilities {
 
     public void enterAmountGiven(String amount) throws InterruptedException {
         givenButton.click();
-        Thread.sleep(2000);
+        waitForElement(amountInput);
         amountInput.click();
         char a[] = amount.toCharArray();
         for(int i=0;i<a.length;i++){
             driver.findElementByXPath("//android.widget.TextView[@text='"+a[i]+"']").click();
         }
-        Thread.sleep(2000);
+        waitForElement(saveButton);
         saveButton.click();
         Thread.sleep(4000);
     }
 
     public void enterAmountReceived(String amount) throws InterruptedException {
         gotButton.click();
-        Thread.sleep(2000);
+        waitForElement(amountInput);
         amountInput.click();
         char a[] = amount.toCharArray();
         for(int i=0;i<a.length;i++){
             driver.findElementByXPath("//android.widget.TextView[@text='"+a[i]+"']").click();
         }
-        Thread.sleep(2000);
+        waitForElement(saveButton);
         saveButton.click();
         Thread.sleep(4000);
     }

@@ -1,15 +1,23 @@
 package Utilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * Utility class provides the utilities that are required to run the selenium tests
+ */
 public class DriverUtilities {
     public static AppiumDriver driver;
 
@@ -25,4 +33,10 @@ public class DriverUtilities {
 
 
     }
+
+    public void waitForElement(AndroidElement element){
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
 }
