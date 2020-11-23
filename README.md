@@ -25,7 +25,7 @@ khata-book-udhar-bahi-khata-credit-ledger-account.apk
 
 ## Running the tests
 
-1. Import the pom.XML
+1. Import the pom.XML as a maven project
 2. Use commands: mvn clean followed by mvn install to install the dependencies
 3. Invoke the testNG.xml from IDE or
   via terminal: mvn test
@@ -41,7 +41,7 @@ Methods: verifyDebitCreditDetails(), verifyCustomerCreatedWithPhoneNumber(), ver
 
 2.Have automated considering the app is installed in the Mobile and user has an account created.
 
-3.Better try-catch mechanism to handle, in case if there are exceptions.
+3.Better try-catch mechanism to handle, in case if there are exceptions and Explicitwait mechanism used instead of thread.sleep()
 
 4.Proper asserts and reporting used to provide a detailed context, can be witnessed in testNG Report - have checked in the same.
 
