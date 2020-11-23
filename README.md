@@ -49,6 +49,8 @@ Methods: verifyDebitCreditDetails(), verifyCustomerCreatedWithPhoneNumber(), ver
 
 6.Reports can be found at: {folder}/appium/target/surefire-reports/emailable-report.html and failed screenshots at: appium/{screenshots}
 
+7.KhathaAndroidApp/appium/src/main/java/POM/LoginPage.java pageobject structure followed to avoid redundancy and better management.
+
 ## Authors
 
 Vinayak kaladhar
