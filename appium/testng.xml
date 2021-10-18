@@ -2,7 +2,7 @@
 <suite name = "Parallel Testing Suite" data-provider-thread-count="20">
     <test name = "Parallel Tests" parallel = "methods" thread-count="2" preserve-order="true">
         <classes>
-            <class name = "KhathaBook" />
+            <class name = "CalculatorApp" />
         </classes>
     </test>
 </suite>

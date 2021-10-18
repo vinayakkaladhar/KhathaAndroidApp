@@ -24,22 +24,22 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Parallel_Testing_Suite">
+            <a href="#" panel-name="suite-Parallel_Testing_Suite" class="navigator-link">
               <span class="suite-name border-passed">Parallel Testing Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Parallel_Testing_Suite">
+                  <a href="#" panel-name="test-xml-Parallel_Testing_Suite" class="navigator-link ">
                     <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Parallel_Testing_Suite">
+                  <a href="#" panel-name="testlist-Parallel_Testing_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Parallel_Testing_Suite">
+                  <a href="#" panel-name="group-Parallel_Testing_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Parallel_Testing_Suite">
+                  <a href="#" panel-name="times-Parallel_Testing_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Parallel_Testing_Suite">
+                  <a href="#" panel-name="reporter-Parallel_Testing_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Parallel_Testing_Suite">
+                  <a href="#" panel-name="ignored-methods-Parallel_Testing_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Parallel_Testing_Suite">
+                  <a href="#" panel-name="chronological-Parallel_Testing_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -103,8 +103,8 @@
                     </span>
                     <div class="method-list-content passed suite-Parallel_Testing_Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_Testing_Suite" title="KhathaBook" hash-for-method="verifyDebitCredit">verifyDebitCredit</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Testing_Suite" title="CalculatorApp" class="method navigator-link" hash-for-method="verifyAddFunctionality">verifyAddFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Parallel_Testing_Suite -->
@@ -122,14 +122,16 @@
           <div class="suite-Parallel_Testing_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">KhathaBook</span>
+              <span class="class-name">CalculatorApp</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyDebitCredit">
-                  </a> <!-- verifyDebitCredit -->
-                  <span class="method-name">verifyDebitCredit</span>
+                  <a name="verifyAddFunctionality">
+                  </a> <!-- verifyAddFunctionality -->
+                  <span class="method-name">verifyAddFunctionality</span>
+                  <em>
+(Verify addition of two numbers)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,16 +139,16 @@
         </div> <!-- panel Parallel_Testing_Suite -->
         <div panel-name="test-xml-Parallel_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/cb-vinayak/appium/testng.xml</span>
+            <span class="header-content">/Users/vinayakkaladhar/work/TwilioAndroid/appium/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Parallel Testing Suite&quot; data-provider-thread-count=&quot;20&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Parallel Tests&quot; parallel=&quot;methods&quot;&gt;
+&lt;suite data-provider-thread-count=&quot;20&quot; name=&quot;Parallel Testing Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Parallel Tests&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;KhathaBook&quot;/&gt;
+      &lt;class name=&quot;CalculatorApp&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Parallel Tests --&gt;
 &lt;/suite&gt; &lt;!-- Parallel Testing Suite --&gt;
@@ -188,14 +190,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyDebitCredit')
-data.setCell(0, 2, 'KhathaBook')
-data.setCell(0, 3, 63637);
+data.setCell(0, 1, 'verifyAddFunctionality')
+data.setCell(0, 2, 'CalculatorApp')
+data.setCell(0, 3, 2135);
 window.suiteTableData['Parallel_Testing_Suite']= { tableData: data, tableDiv: 'times-div-Parallel_Testing_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Parallel_Testing_Suite">
               </div> <!-- times-div-Parallel_Testing_Suite -->
             </div> <!-- times-div -->
@@ -207,16 +209,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyDebitCredit</span>
+              <span class="reporter-method-name">verifyAddFunctionality</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Customer: vin added</span>
-                <span class="reporter-method-output">First transaction - amount lent: ₹ 100</span>
-                <span class="reporter-method-output">Record Shows ₹ 100 lent</span>
-                <span class="reporter-method-output">Second transaction - amount received: ₹ 70</span>
-                <span class="reporter-method-output">Table record 1 Shows ₹ 70 received</span>
-                <span class="reporter-method-output">Table record 2 Shows ₹ 100 lent</span>
-                <span class="reporter-method-output">SMS/Whatsapp cannot be done since mobile number was not entered during customer creation</span>
-                <span class="reporter-method-output">Report and PDF displays ₹ 30 yet to be collected from customer</span>
+                <span class="reporter-method-output">Numbers have been added successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,22 +229,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">KhathaBook</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">CalculatorApp</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startApp</span>
-                <span class="method-start">12047 ms</span>
+                <span class="method-start">4648 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyDebitCredit</span>
-                <span class="method-start">19811 ms</span>
+                <span class="method-name">verifyAddFunctionality</span>
+                <span class="method-start">5539 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopApp</span>
-                <span class="method-start">83449 ms</span>
+                <span class="method-start">7675 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
